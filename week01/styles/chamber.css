@@ -1,0 +1,50 @@
+.header-grid {
+    display: grid;
+    grid-template-columns: 6rem auto;
+}
+
+.header-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    color: rgb(1, 6, 19);
+    padding: 0;
+    font-family: 'Roboto';
+    background-color: rgb(228, 229, 233);
+}
+
+.header-flex h1 {
+    text-shadow: 0 0 10px #241e1e;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    list-style-type: none;
+    background-color: rgb(37, 49, 209);
+    font-family: Roboto;
+    text-align: center;
+    margin: 0;
+    font-size: 1.5rem;
+    color: white;
+    padding: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+nav li:hover {
+    background-color: rgba(92, 91, 91, 0.959);
+    cursor: pointer;
+}
+
+nav .active {
+    background-color: black;
+    font-weight: bold;
+}
