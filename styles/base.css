@@ -53,6 +53,10 @@ nav .active {
     padding: 0;
 }
 
+.learning a {
+    color: rgb(12, 12, 12);
+}
+
 h1 {
     font-size: 12pt;
     color: rgb(87, 86, 86);
