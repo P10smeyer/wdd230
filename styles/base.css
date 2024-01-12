@@ -36,6 +36,12 @@ nav ul {
     margin: 0;
 }
 
+.navbar a {
+    color: rgb(243, 243, 245);
+    text-decoration: none;
+    padding: 0 1rem;
+}
+
 nav li:hover {
     background-color: rgba(187, 183, 183, 0.959);
     cursor: pointer;
