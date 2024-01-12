@@ -71,7 +71,7 @@ main .card {
 }
 
 main .card li {
-    font-weight:bolder;
+    font-weight: bolder;
 }
 
 footer {
@@ -79,6 +79,7 @@ footer {
     background-color: rgb(49, 101, 150);
     font-family: Roboto;
     color: rgb(243, 243, 245);
+    padding: 10px;
 }
 
 #lastModified {
