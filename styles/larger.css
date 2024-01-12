@@ -37,9 +37,14 @@
         background-color: rgb(12, 12, 12);
         font-family: Roboto;
         text-align: center;
-        color: rgb(243, 243, 245);
         margin: 0;
         font-size: 1.5rem;
+    }
+
+    .navbar a {
+        color: rgb(243, 243, 245);
+        text-decoration: none;
+        padding: 0 1rem;
     }
 
     nav li:hover {
@@ -74,10 +79,6 @@
         box-shadow: 0 0 20px 1px #888888;
     }
 
-    main .card li {
-        font-weight: bolder;
-    }
-
     .information li {
         padding: 10px;
     }
@@ -90,6 +91,10 @@
     .learning {
         text-align: left;
         padding-left: 10px;
+    }
+
+    .learning a {
+        color: rgb(12, 12, 12);
     }
 
     h1 {
