@@ -1,6 +1,8 @@
 .header-grid {
     display: grid;
-    grid-template-columns: 6rem auto;
+    align-items: center;
+    grid-template-columns: 50% 30% 20%;
+    column-gap: 25px;
 }
 
 header {
@@ -9,6 +11,15 @@ header {
     font-family: Roboto;
     color: rgb(243, 243, 245);
     font-size: 2em; 
+
+}
+
+#header-img {
+    text-align: right;
+}
+
+#header-name {
+    text-align: left;
 }
 
 header span {
@@ -31,6 +42,9 @@ ul {
 }
 
 nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
     text-align: center;
     color: white;
     margin: 0;

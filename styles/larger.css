@@ -31,7 +31,7 @@
     .navbar ul{
         display: flex;
         justify-content: space-evenly;
-        flex-direction: row;
+        flex-direction: column;
         list-style-type: none;
         padding: 0;
         background-color: rgb(12, 12, 12);
