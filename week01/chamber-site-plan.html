@@ -6,6 +6,8 @@
     <title>Preston Tensmeyer - WDD 230 - Chamber Site Project</title>
     <meta name="description" content="WDD 230 - Ogden Chamber of Commerce| Preston Tensmeyer | Chamber Site Project">
     <meta name="author" content="Preston Tensmeyer">
+    <!-- Roboto and Open Sans Fonts (2 fonts so far). Font colors are included and used in the .css. 
+    Can also view the site to see a wireframe or draft layout (1 for a mobile viewport and 1 for a larger viewport). -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto&display=swap" rel="stylesheet">
@@ -15,11 +17,13 @@
 <body>
     <header class="header-flex">
         <div>
+            <!-- I'm am aware I am getting an error here as I have not yet selected a source image for the project. -->
             <img src="" alt="Logo" width="75" height="100">
         </div>
+        <!-- Site name section. Rubric says to have a section. Is it expected to be a section? If so, it will throw an html warning if h1 is not a top-level heading.-->
         <h1>Ogden, Utah Chamber of Commerce</h1>
         <div>
-            <!-- might decide to put this in the footer instead -->
+            <!-- might decide to put this in the footer instead. I'm aware inpections is throwing issues since I have 'xxxx' as a temp placeholder until I fetch the images. -->
             <img src="week01/images/xxxx" alt="Facebook" width="25" height="25">
             <img src="week01/images/xxxx" alt="Twitter" width="25" height="25">
             <img src="week01/images/xxxx" alt="LinkedIn" width="25" height="25">
@@ -35,12 +39,15 @@
     </nav>
     <main>
         <div class="hero">
+            <!-- Site purpose/mission. Has at least two purposes. -->
             <h1>Our Mission</h1>
             <p>The Ogden Chamber of Commerce serves to connect you and your business to professionals and citizens within Weber County and throughout all of Utah. We provide resources to network, receive eduation, develop leadership skills, and improve our Utah communities.</p>
-            <a href="">
-                <button>Join Today!</button>
-            </a>
+            <button onclick="">Join Today!</button>
         </div>
+        <!-- Scenario questions:
+        1. What events will be happening?
+        2. Is this an organization I would want to purchase a membership for?
+        3. How can I contact the Chamber of Commerce with questions? -->
         <div class="scenarios">
             <ul>
                 <li><a href="">Events</a></li>
