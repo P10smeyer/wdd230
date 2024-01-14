@@ -1,4 +1,4 @@
-@media screen and (max-width: 35rem) {
+@media screen and (min-width: 40rem) {
     body {
         width: 100%;
         margin: 0;
@@ -31,7 +31,7 @@
     .navbar ul{
         display: flex;
         justify-content: space-evenly;
-        flex-direction: column;
+        flex-direction: row;
         list-style-type: none;
         padding: 0;
         background-color: rgb(12, 12, 12);

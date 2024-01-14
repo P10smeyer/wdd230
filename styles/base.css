@@ -44,7 +44,7 @@ ul {
 nav ul {
     display: flex;
     justify-content: space-evenly;
-    flex-direction: row;
+    flex-direction: column;
     text-align: center;
     color: white;
     margin: 0;
@@ -69,6 +69,14 @@ nav .active {
 
 .learning a {
     color: rgb(12, 12, 12);
+}
+
+.learning li {
+    text-align: left;
+}
+
+.information li {
+    padding: 10px;
 }
 
 h1 {
@@ -104,6 +112,7 @@ footer {
     font-family: Roboto;
     color: rgb(243, 243, 245);
     padding: 10px;
+    margin: 10px;
 }
 
 #lastModified {
