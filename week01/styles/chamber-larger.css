@@ -1,4 +1,4 @@
-@media screen and (min-width: 35rem) {
+@media screen and (min-width: 40rem) {
     body {
         width: 100%;
         margin: 0;
@@ -72,7 +72,6 @@
     }
 
     .scenarios a {
-
         border: 5px solid rgb(37, 49, 209);
         background-color: rgb(228, 229, 233);
         border-radius: 1000px; 
@@ -80,6 +79,10 @@
         padding: 20px;
         text-decoration: none;
         color: rgb(1, 6, 19);
+    }
+
+    .scenarios li {
+        list-style: none;
     }
 
     footer {
