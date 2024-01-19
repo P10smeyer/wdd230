@@ -93,9 +93,11 @@ nav .active {
 	background-color: #333;
 	color: #fff;
 }
+
 .menuLinks li {
 	display: none;
 }
+
 .menuLinks li a {
 	display: block;
 	padding: 1rem;

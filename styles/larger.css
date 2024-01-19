@@ -58,9 +58,13 @@
         padding: 0;
     }
 
-    /* #menu {
+    #menu {
         display: none;
-    } */
+    }
+
+    .menuLinks li {
+        display: flex;
+    }
 
     ul {
         list-style-type: none;
