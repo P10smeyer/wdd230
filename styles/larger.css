@@ -118,7 +118,7 @@
 
     footer {
         text-align: center;
-        background-color: rgb(49, 101, 150);
+        background-color: rgb(8, 55, 99);
         font-family: Roboto;
         color: rgb(243, 243, 245);
         padding: 10px;
@@ -126,6 +126,6 @@
     
     #lastModified {
         font-family: Roboto;
-        color: rgb(255, 255, 0);
+        color: rgb(243, 243, 245);
     }
 }
