@@ -47,6 +47,10 @@
         padding: 0 1rem;
     }
 
+    .navbar li {
+        justify-content: center;
+    }
+
     nav li:hover {
         background-color: rgba(187, 183, 183, 0.959);
         cursor: pointer;
@@ -64,7 +68,20 @@
 
     .menuLinks li {
         display: flex;
+        width: 100%;
     }
+
+    /* .menuLinks li a {
+        display: flex;
+        padding: 0 1rem;
+        text-align: center;
+        text-decoration: none;
+        color: #fff;
+    } */
+
+    /* .menuLinks ul {
+        padding: 0 1rem;
+    } */
 
     ul {
         list-style-type: none;
