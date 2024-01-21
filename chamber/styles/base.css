@@ -50,32 +50,67 @@ nav .active {
 }
 
 .hero {
+    position: relative;
+    height: 50vh;
+    width: 100%;
+}
+
+.hero-image {
+    position: absolute;
+    height: 50vh;
+    width: 100%;
+    background-image: url("https://images.ctfassets.net/0wjmk6wgfops/2Ug1ZjCIucSfTtjV9ClSca/a8923ed152e2283ab6ae37c1aebd94a5/Washington_Ave_winter_morning_credit_Albert_Lew_8234092f-e5ec-4c76-897b-4c53715b8d8c.jpg?q=70");
+    opacity: .5;
+    background-size: cover;
+}
+
+.hero-text {
+    position: absolute;
+    font-weight: bold;
+    color: rgb(1, 6, 19);
     text-align: center;
-    font-size: larger;
+    justify-content: center;
+    padding-top: 2rem;
+}
+
+.hero button {
+    font-weight: bold;
+    font-size: 1.5rem;
 }
 
 .scenarios {
-    box-sizing: border-box;
+    margin-top: 40px;
 }
 
 .scenarios ul {
-    display: flex;
-    justify-content: space-evenly;
-    margin: 0;
-    padding: 50px;
-    font-size: 1.5rem;
-    color: rgb(228, 229, 233);
+    display: grid;
+    grid-template-columns: 1fr 1fr auto;
+    grid-auto-rows: 75px;
+    margin-bottom: -3rem;
 }
 
 .scenarios a {
-
     border: 5px solid rgb(37, 49, 209);
     background-color: rgb(228, 229, 233);
-    border-radius: 1000px; 
-    margin: 0.5em;
-    padding: 20px;
     text-decoration: none;
+    padding: 10px;
+}
+
+.spotlights {
+    box-sizing: border-box;
+    border: 5px solid rgb(37, 49, 209);
+    background-color: rgb(228, 229, 233);
+    text-align: left;
+    justify-content: center;
+    width: fit-content;
+    margin: 20px auto;
+    padding: 10px;
+}
+
+.spotlights h2 {
     color: rgb(1, 6, 19);
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
 }
 
 .scenarios li {
