@@ -214,3 +214,28 @@ footer {
     font-family: Roboto;
     color: rgb(243, 243, 245);
 }
+
+.hero
+{
+    position: relative;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .hero span {
+    position: absolute;
+    width: 40%;
+    right: 5%;
+    bottom: 1rem;
+    background: radial-gradient(#fff, #565ed1);
+    padding: 1rem;
+    text-align: center;
+    opacity: .8;
+    border: 1px solid rgb(97, 94, 94);
+    box-shadow: 0 0 10px 5px rgb(168, 167, 167);
+    border-radius: 3px;
+  }

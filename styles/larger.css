@@ -1,4 +1,4 @@
-@media screen and (min-width: 40rem) {
+@media screen and (min-width: 60rem) {
     body {
         width: 100%;
         margin: 0;
@@ -71,18 +71,6 @@
         width: 100%;
     }
 
-    /* .menuLinks li a {
-        display: flex;
-        padding: 0 1rem;
-        text-align: center;
-        text-decoration: none;
-        color: #fff;
-    } */
-
-    /* .menuLinks ul {
-        padding: 0 1rem;
-    } */
-
     ul {
         list-style-type: none;
         padding: 0;
@@ -152,5 +140,9 @@
     #lastModified {
         font-family: Roboto;
         color: rgb(243, 243, 245);
+    }
+
+    .hero span {
+        font-size: 3rem;
     }
 }
