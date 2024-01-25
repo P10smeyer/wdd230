@@ -22,7 +22,7 @@
 <body>
     <header class="header-grid">
         <div id="header-img">
-            <img src="images/preston.jpg" alt="Preston Tensmeyer" width="75" height="100">
+            <img src="images/preston.webp" alt="Preston Tensmeyer" width="75" height="100">
         </div>
         <div id="header-name">
             <span>Preston Tensmeyer</span>
@@ -31,7 +31,6 @@
             <li id="dark-logo">🕶️</li>
             <li>Dark Mode</li>
         </ul>
-            <!-- <img src="images/dark-mode.svg" alt="dark mode" height="25" width="25" id="darkBtn"> -->
     </header>
     <nav class="navbar">
         <button id="menu"></button>
@@ -43,14 +42,15 @@
         </ul>
     </nav>
     <main>
+        <!-- Getting error for having a span. Awaiting response to teams question about work around since this is what the assignment recommended. -->
+        <!-- <picture class="hero"></picture> -->
         <picture class="hero">
-            <div class="hero-img">
-                <source media="(max-width: 400px)" srcset="images/washington-dc-temple-small">
-                <source media="(max-width: 960px)" srcset="images/washington-dc-temple-medium.webp">
-                <img src="images/washington-dc-temple-medium.webp" alt="Washington DC Temple" width="1360" height="680">
-            </div>
+            <source media="(max-width: 400px)" srcset="images/washington-dc-temple-small">
+            <source media="(max-width: 960px)" srcset="images/washington-dc-temple-medium.webp">
+            <img src="images/washington-dc-temple-medium.webp" alt="Washington DC Temple" width="1360" height="680">
             <span>Washington D.C. Temple</span>
         </picture>
+        <!-- </picture> -->
         <h1>WDD 230: Web Frontend Development</h1>
         <div class="cards">
             <section class="card">
@@ -69,15 +69,19 @@
                 <ul class="information">
                     <li class="a">Location</li>
                     <li class="a">Weather</li>
-                    <li class="a">Page Visits</li>
+                    <li class="a"><span class="label">Page Visits:</span><span class="visits"></span></li>
                 </ul>
             </section>
         </div>
     </main>
+    <section class="card">
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47956.19570618705!2d-112.1245368672463!3d41.30315858532739!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x875314eabb5bd9bb%3A0x6c65f4538dc2e5db!2sPlain%20City%2C%20UT%2084404!5e0!3m2!1sen!2sus!4v1706156099603!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
     <footer>
         <p>© <span id="yearFooter"></span> | Preston Tensmeyer | USA</p>
         <p id="lastModified"></p>
     </footer>
+    <script src="scripts/site-visits.js"></script>
     <script src="scripts/darkMode.js"></script>
     <script src="scripts/menu.js"></script>
     <script src="scripts/getDates.js"></script>
