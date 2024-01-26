@@ -183,3 +183,46 @@ footer {
     color: white;
     padding: 10px;
 }
+
+.sidebar-parent {
+    display: grid;
+    text-align: center;
+    grid-template-columns: 1fr;
+    margin-top: 5px;
+  }
+
+  .sidebar-child {
+    text-align: center;
+    border: #333;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 2.5px;
+    margin: 10px;
+    font-family: "Roboto";
+    min-width: 0;
+    box-shadow: 0 0 4px 2px;
+    padding-bottom: 10px;
+  }
+
+  .sidebar-child iframe {
+    width: 95%;
+  }
+
+  .sidebar-child img {
+    width: 95%;
+    height: auto;
+  }
+
+  .sidebar-child li {
+    text-align: left;
+    margin: 5px;
+  }
+
+  .sources {
+    font-style: italic;
+    list-style: none;
+  }
+
+  .no-bullets {
+    list-style: none;
+  }

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preston Tensmeyer - WDD 230 - Chamber of Commerce Site Project</title>
+    <meta name="description" content="WDD 230 - Ogden Chamber of Commerce| Preston Tensmeyer | Chamber Site Project">
+    <meta name="author" content="Preston Tensmeyer">
+    <meta property="og:title" content="Ogden, Utah Chamber of Commerce">
+    <meta property="og:description" content="WDD 230 - Ogden Chamber of Commerce| Preston Tensmeyer | Chamber Site Project">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://images.ctfassets.net/0wjmk6wgfops/2Ug1ZjCIucSfTtjV9ClSca/a8923ed152e2283ab6ae37c1aebd94a5/Washington_Ave_winter_morning_credit_Albert_Lew_8234092f-e5ec-4c76-897b-4c53715b8d8c.jpg?q=70">
+    <meta property="og:url" content="https://p10smeyer.github.io/wdd230/chamber">
+    <!-- Roboto and Open Sans Fonts (2 fonts so far). Font colors are included and used in the .css. 
+    Can also view the site to see a wireframe or draft layout (1 for a mobile viewport and 1 for a larger viewport). -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico?v=2">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto&display=swap" rel="stylesheet">
+    <link href="styles/normalize.css" rel="stylesheet">
+    <link href="styles/base.css" rel="stylesheet">
+    <link href="styles/larger.css" rel="stylesheet">
+</head>
+<body>
+    <header class="header-flex">
+        <div id="logo">
+            <!-- I'm am aware I am getting an error here as I have not yet selected a source image for the project. -->
+            <img src="favicon.ico" alt="Logo" width="75" height="90">
+        </div>
+        <!-- Site name section. Rubric says to have a "section."" Is it expected to be a section tag? If so, it will throw an html warning if h1 is not a top-level heading.-->
+        <h1>Ogden City, Utah Chamber of Commerce</h1>
+        <div>
+            <!-- might decide to put this in the footer instead. I'm aware inpections is throwing issues since I have 'xxxx' as a temp placeholder until I fetch the images. -->
+            <img src="week01/images/xxxx" alt="Facebook" width="25" height="25">
+            <img src="week01/images/xxxx" alt="Twitter" width="25" height="25">
+            <img src="week01/images/xxxx" alt="LinkedIn" width="25" height="25">
+        </div>
+    </header>
+    <nav class="navigation">
+        <button id="menu"></button>
+        <ul class="menuLinks">
+            <li><a href="index.html">Home</a></li>
+            <li class="active"><a href="discover.html">Discover</a></li>
+            <li><a href="">Directory</a></li>
+            <li><a href="">Join</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="sidebar-parent">
+            <div class="sidebar-child">
+                <h2>Location</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3000.938587336738!2d-111.97255432394861!3d41.22310877132123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87530edf1a15e05d%3A0xbe9a76083e682fd5!2sOgden-Weber%20Chamber%20of%20Commerce!5e0!3m2!1sen!2sus!4v1706294436100!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="sidebar-child">
+                <h2>Ogden, City Utah Chamber of Commerce</h2>
+                <picture>
+                    <source media="(max-width: 600px)" srcset="images/ogden-chamber-small.webp">
+                    <source media="(max-width: 1000px)" srcset="images/ogden-chamber-large.webp">
+                    <img src="images/ogden-chamber-large.webp" alt="Ogden City, UT Chamber of Commerce">
+                </picture>
+            </div>
+            <div class="sidebar-child">
+                <h2>History</h2>
+                <ul>
+                    <li>Ogden City was incorporated as a city in 1851.</li>
+                    <li>Surprisingly, the Ogden City, Utah Chamber of Commerce was established in January 2024 at the commencement of the WDD 230 Web Frontend Development course through BYU.</li>
+                    <li>Ogden's downtown “Crossroads of the West” Historical District has been designated a national historic area.</li>
+                    <li>Union Station was constructed in 1924.</li>
+                </ul>
+            </div>
+            <div class="sidebar-child">
+                <h2>Ogden, City Utah Chamber of Commerce</h2>
+                <picture>
+                    <source media="(max-width: 600px)" srcset="images/union-station-small.webp">
+                    <source media="(max-width: 1000px)" srcset="images/union-station-large.webp">
+                    <img src="images/union-station-large.webp" alt="Union Station - Ogden, UT">
+                </picture>
+            </div>
+            <div class="sidebar-child">
+                <h2>Demographics</h2>
+                <ul>
+                    <li>Ogden City population is approximately 84,000.</li>
+                    <li>Ogden Sex Ratio: 47.79% female, 52.21% Male</li>
+                    <li>Average Family Size: 3.27</li>
+                    <li>Rate of Home Ownership: 60.2%</li>
+                    <li>Education:</li>
+                    <li class="no-bullets"> - Bachelors Degree: 17.11%</li>
+                    <li class="no-bullets"> - Graduate Degree: 7.63%</li>
+                    </li>
+                </ul>
+            </div>
+            <div class="sidebar-child">
+                <h2>25th Street Ogden, UT</h2>
+                <picture>
+                    <source media="(max-width: 600px)" srcset="images/demographics-small.webp">
+                    <source media="(max-width: 1000px)" srcset="images/demographics-large.webp">
+                    <img src="images/demographics-large.webp" alt="25th Street Ogden, UT">
+                </picture>
+            </div>
+            <div class="sidebar-child">
+                <h2>Fun Facts</h2>
+                <ul>
+                    <li>Elevation: 4,280</li>
+                    <li>Highest Peak: Ben Lomond at 9,712 feet</li>
+                    <li>Avergage yearly snowfall: 65.3 inches</li>
+                    <li>Average ski resort yearly snowfall - 450 inches</li>
+                    <li>Average yearly rainfall - 18.9 inches</li>
+                    <li>Over 45 films and TV shows have been shot in Ogden area.</li>
+                    <li>Ogden was home to three venues during the 2002 Olympic Winter Games</li>
+                    <li>Powder Mountain has more acreage than any resort in North America</li>
+                </ul>
+            </div>
+            <div class="sidebar-child">
+                <h2>2002 Winter Olympics</h2>
+                <picture>
+                    <source media="(max-width: 600px)" srcset="images/olympics-small.webp">
+                    <source media="(max-width: 1000px)" srcset="images/olympics-large.webp">
+                    <img src="images/olympics-large.webp" alt="2002 Winter Olympics">
+                </picture>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>© <span id="yearFooter"></span> | Ogden, UT Chamber of Commerce | USA</p>
+        <p>Chamber of Commerce @ (801) 911-1234 | ogdenchamberfakemail.com</p>
+        <p>Created By: Preston Tensmeyer | WDD 230</p>
+        <p id="lastModified"></p>
+        <ul class="sources">
+            <li>Sources:</li>
+            <li>https://www.visitogden.com</li>
+            <li>https://worldpopulationreview.com/us-cities/ogden-ut-population</li>
+            <li>ogdencity.com</li>
+        </ul>
+    </footer>
+    <script src="scripts/menu.js"></script>
+    <script src="../scripts/getDates.js"></script>
+</body>
+</html>
