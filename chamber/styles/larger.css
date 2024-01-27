@@ -103,6 +103,20 @@
         list-style: none;
     }
 
+    .sidebar-parent {
+        display: grid;
+        text-align: center;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 5px;
+    }
+
+    .sidebar-child {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
     footer {
         text-align: center;
         background-color: rgb(37, 49, 209);
