@@ -125,4 +125,8 @@
         padding: 10px;
         margin-top: 10px;
     }
+
+    .sidebar-child img:hover {
+        cursor: pointer;
+    }
 }

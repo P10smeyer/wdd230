@@ -225,3 +225,7 @@ footer {
   .no-bullets {
     list-style: none;
   }
+
+  #today {
+    display: inline;
+  }
