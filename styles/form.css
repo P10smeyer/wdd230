@@ -72,8 +72,9 @@ form label.top input:required:valid {
 
 #rangevalue {
     padding: 0;
-    color: var(--legendText);
-    font-size: 1rem;
+    color: var(--blackFont);
+    font-size: 1.25rem;
+    font-weight: bold;
 }
 
 .submit {
