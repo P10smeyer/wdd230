@@ -39,41 +39,37 @@
     <nav class="navigation">
         <button id="menu"></button>
         <ul class="menuLinks">
-            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="discover.html">Discover</a></li>
             <li><a href="">Directory</a></li>
-            <li><a href="join.html">Join</a></li>
+            <li class="active"><a href="join.html">Join</a></li>
         </ul>
     </nav>
-    <main>
-        <div class="hero">
-            <div class="hero-image"></div>
-            <div class="hero-text">
-                <!-- Site purpose/mission. Has at least two purposes. --> 
-                <h1>Our Mission</h1>
-                <p>The Ogden Chamber of Commerce serves to connect you and your business to professionals and citizens within Weber County and throughout all of Utah. We provide resources to network, receive eduation, develop leadership skills, and improve our Utah communities.</p>
-                <button>Join Today!</button>
-            </div>
-        </div>
-        <!-- Scenario questions:
-        1. What events will be happening?
-        2. Is this an organization I would want to purchase a membership for?
-        3. How can I contact the Chamber of Commerce with questions? -->
-        <div class="scenarios">
-            <ul>
-                <li><a href="">Current Events</a></li>
-                <li><a href="">Weather Report</a></li>
-                <li><a href="">Company Reviews</a></li>
-                <li><a href="">Contact Us</a></li>
-            </ul>
-        </div>
-        <div class="spotlights">
-            <h2>Ogden Chamber Monthly Spotlight</h2>
-            <a href="https://topworkplaces.com/award/saltlake/2023/">Top Utah Companies to Work For 2023</a>
-            <p>1. Building Zone Industries</p>                   
-            <p>2. Mountain America Credit Union</p>
-            <p>3. CHG Healthcare</p>
-        </div>
+    <main class="main-join">
+        <form method="get" action="thankyou.html">
+            <fieldset>
+                <legend>Join the Chamber of Commerce</legend>
+                <label class="top">First Name* <input type="text" id=fname name="fname" required placeholder="First Name"></label>
+                <label class="top">Last Name* <input type="text" id="lname" name="lname" required placeholder="Last Name"></label>
+                <label class="top">Title or Position <input type="text" id="title-position" name="title-position" pattern="^([\w\s\-]*)$" placeholder="Title or Position"></label>
+                <label class="top">Email* <input type="email" id="email" name="email" pattern="[a-z0-9._%+\-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}" title="Please enter a valid email address" placeholder="someone@byui.edu"></label>               
+                <label class="top">Mobile Phone Number* <input type="tel" id="phone" name="phone" required placeholder="8011231234">
+                <label class="top">Business/Organization Name* <input type="text" id="org" name="org" required></label>
+                <label class="sbs">Membership Level
+                    <select name="level" required>
+                        <option value="">Please Select &#9662;</option>
+                        <option value="non-profit">NP Membership is for non profit organizations and there is no fee</option>
+                        <option value="bronze">Bronze Membership</option>
+                        <option value="silver">Silver Membership</option>
+                        <option value="gold">Gold Membership</option>
+                    </select>
+                </label>
+                <label class="top"></label><label class="sbs">Business/Organization Description* <textarea name="description" id="description" cols="30" rows="10"></textarea></label>
+                <label class="top"></label><input type="hidden" id="date" name="date" value="CurrentTime"></label>
+                <label class="top"></label><input type="hidden" id="time" name="time" value="CurrentDate"></label>
+                <label class="top"></label><input type="submit" value="Rate This Page" class="submit"></label>
+            </fieldset>
+        </form>
     </main>
     <footer>
         <p>© <span id="yearFooter"></span> | Ogden, UT Chamber of Commerce | USA</p>
@@ -81,6 +77,7 @@
         <p>Created By: Preston Tensmeyer | WDD 230</p>
         <p id="lastModified"></p>
     </footer>
+    <script src="scripts/join.js"></script>
     <script src="scripts/menu.js"></script>
     <script src="../scripts/getDates.js"></script>
 </body>

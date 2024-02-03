@@ -4,7 +4,6 @@
     --blackFont: black;
     --border: #0d2574;
     --legendText: #445ba9;
-
 }
 
 h1 {
@@ -23,6 +22,7 @@ form fieldset {
     border-radius: 10px;
     padding: 0 20% 0 25%;
 }
+
 form legend {
     color: var(--legendText);
     margin: 0 1rem;
