@@ -29,12 +29,12 @@
         </div>
         <!-- Site name section. Rubric says to have a "section."" Is it expected to be a section tag? If so, it will throw an html warning if h1 is not a top-level heading.-->
         <h1>Ogden City, Utah Chamber of Commerce</h1>
-        <div>
-            <!-- might decide to put this in the footer instead. I'm aware inpections is throwing issues since I have 'xxxx' as a temp placeholder until I fetch the images. -->
+        <!-- <div>
+            might decide to put this in the footer instead. I'm aware inpections is throwing issues since I have 'xxxx' as a temp placeholder until I fetch the images.
             <img src="week01/images/xxxx" alt="Facebook" width="25" height="25">
             <img src="week01/images/xxxx" alt="Twitter" width="25" height="25">
             <img src="week01/images/xxxx" alt="LinkedIn" width="25" height="25">
-        </div>
+        </div> -->
     </header>
     <nav class="navigation">
         <button id="menu"></button>
@@ -53,10 +53,10 @@
                 <label class="top">Last Name* <input type="text" id="lname" name="lname" required placeholder="Last Name"></label>
                 <label class="top">Title or Position <input type="text" id="title-position" name="title-position" pattern="^([\w\s\-]*)$" placeholder="Title or Position"></label>
                 <label class="top">Email* <input type="email" id="email" name="email" pattern="[a-z0-9._%+\-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}" title="Please enter a valid email address" placeholder="someone@byui.edu"></label>               
-                <label class="top">Mobile Phone Number* <input type="tel" id="phone" name="phone" required placeholder="8011231234"></label>
+                <label class="top">Mobile Phone Number* <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required placeholder="801-123-1234"></label>
                 <label class="top">Business/Organization Name* <input type="text" id="org" name="org" required></label>
                 <label class="top">Membership Level
-                    <select name="level" required>
+                    <select id="level" name="level" required>
                         <option value="">Please Select &#9662;</option>
                         <option value="non-profit">NP Membership is for non profit organizations and there is no fee</option>
                         <option value="bronze">Bronze Membership</option>
@@ -70,6 +70,72 @@
                 <label class="hide"><input type="hidden" id="time" name="time" value="CurrentDate"></label>
             </fieldset>
         </form>
+        <div class="benefits">
+            <h2>Membership benefits</h2>
+            <h3>Non Profit Membership</h3>
+            <ul class="mem-level">
+                <li>Cost: No Fees to Join</li>
+                <li>Benefits Include:</li>
+                <li class="no-bullets">
+                    <ul>
+                        <li>Access to online training programs</li>
+                        <li>Advertising opportunies (e.g. website and newletters)</li>
+                        <li>10% event discounts</li>
+                    </ul>
+                </li>
+            </ul>
+            <h3>Bronze Membership</h3>
+            <ul class="mem-level">
+                <li>Cost: $300, 10% discount if paid in full annually</li>
+                <li>Benefits Include:</li>
+                <li class="no-bullets">
+                    <ul>
+                        <li>Access to online training programs</li>
+                        <li>Advertising opportunies (e.g. website and newletters)</li>
+                        <li>15% event discounts</li>
+                        <li class="no-bullets">
+                            <ul>
+                                <li>Priority registration for events before non-profit</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <h3>Silver Membership</h3>
+            <ul class="mem-level">
+                <li>Cost: $350, 10% discount if paid in full annually</li>
+                <li>Benefits Include:</li>
+                <li class="no-bullets">
+                    <ul>
+                        <li>Access to online training programs</li>
+                        <li>Advertising opportunies (e.g. website and newletters)</li>
+                        <li>20% event discounts</li>
+                        <li class="no-bullets">
+                            <ul>
+                                <li>Priority registration for events before non-profit and bronze members</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <h3>Gold Membership</h3>
+            <ul class="mem-level">
+                <li>Cost: $400, 10% discount if paid in full annually</li>
+                <li>Benefits Include:</li>
+                <li class="no-bullets">
+                    <ul>
+                        <li>Access to online training programs</li>
+                        <li>Advertising opportunies (e.g. website and newletters)</li>
+                        <li>25% event discounts</li>
+                        <li class="no-bullets">
+                            <ul>
+                                <li>Priority registration for events before non-profit, bronze, and silver members</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
     </main>
     <footer>
         <p>© <span id="yearFooter"></span> | Ogden, UT Chamber of Commerce | USA</p>
