@@ -53,9 +53,9 @@
                 <label class="top">Last Name* <input type="text" id="lname" name="lname" required placeholder="Last Name"></label>
                 <label class="top">Title or Position <input type="text" id="title-position" name="title-position" pattern="^([\w\s\-]*)$" placeholder="Title or Position"></label>
                 <label class="top">Email* <input type="email" id="email" name="email" pattern="[a-z0-9._%+\-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}" title="Please enter a valid email address" placeholder="someone@byui.edu"></label>               
-                <label class="top">Mobile Phone Number* <input type="tel" id="phone" name="phone" required placeholder="8011231234">
+                <label class="top">Mobile Phone Number* <input type="tel" id="phone" name="phone" required placeholder="8011231234"></label>
                 <label class="top">Business/Organization Name* <input type="text" id="org" name="org" required></label>
-                <label class="sbs">Membership Level
+                <label class="top">Membership Level
                     <select name="level" required>
                         <option value="">Please Select &#9662;</option>
                         <option value="non-profit">NP Membership is for non profit organizations and there is no fee</option>
@@ -64,10 +64,10 @@
                         <option value="gold">Gold Membership</option>
                     </select>
                 </label>
-                <label class="top"></label><label class="sbs">Business/Organization Description* <textarea name="description" id="description" cols="30" rows="10"></textarea></label>
-                <label class="top"></label><input type="hidden" id="date" name="date" value="CurrentTime"></label>
-                <label class="top"></label><input type="hidden" id="time" name="time" value="CurrentDate"></label>
-                <label class="top"></label><input type="submit" value="Rate This Page" class="submit"></label>
+                <label class="top">Business/Organization Description* <textarea name="description" id="description" cols="30" rows="10"></textarea></label>
+                <label><input type="submit" value="Rate This Page" class="submit"></label>
+                <label class="hide"><input type="hidden" id="date" name="date" value="CurrentTime"></label>
+                <label class="hide"><input type="hidden" id="time" name="time" value="CurrentDate"></label>
             </fieldset>
         </form>
     </main>

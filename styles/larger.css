@@ -1,12 +1,4 @@
 @media screen and (min-width: 60rem) {
-    :root {
-        --requiredRed: red;
-        --requiredValid: green;
-        --blackFont: black;
-        --border: #0d2574;
-        --legendText: #445ba9;
-    }
-
     body {
         width: 100%;
         margin: 0;
