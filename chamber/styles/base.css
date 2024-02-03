@@ -307,3 +307,7 @@ form label.top input:required:valid {
     padding: 0 20% 0 20%;
     text-align: center;
 }
+
+.hide {
+    display: none;
+}
