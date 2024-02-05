@@ -1,0 +1,18 @@
+{
+    "familyName" : "Doe",
+    "datedMovedIn" : 2019,
+    "familySize" : 2,
+    "bishopricVisited" : true,
+    "familyMembers" : [
+        {
+            "name" : "Ate",
+            "gender" : "Male",
+            "birthday" : "1 January 1990"
+        },
+        {
+            "name" : "Yummy",
+            "gender" : "Female",
+            "birthday" : "2 January 2000"
+        }
+    ]
+}
