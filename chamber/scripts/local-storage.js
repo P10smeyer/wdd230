@@ -7,8 +7,10 @@ let firstVisit = document.querySelector(".firstVisit");
 let backSoSoon = document.querySelector(".backSoSoon");
 let lastVisited = document.querySelector(".lastVisited");
 
-if ((date - pastDate) > msToDays) {
-    backSoSoon.textContent = `Back so soon! Awesome!`;
+if ((date - pastDate) < msToDays) {
+    if (numVisits > 1) {
+        backSoSoon.textContent = `Back so soon! Awesome!`;
+    }
 }
 else {
     backSoSoon.textContent = "";
