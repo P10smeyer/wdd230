@@ -7,15 +7,6 @@ let firstVisit = document.querySelector(".firstVisit");
 let backSoSoon = document.querySelector(".backSoSoon");
 let lastVisited = document.querySelector(".lastVisited");
 
-if (numVisits !== 0) {
-	visitsDisplay.textContent = numVisits;
-} 
-else {
-    numVisits = 1;
-    visitsDisplay.textContent = numVisits;
-	firstVisit.textContent = `Welcome! Let us know if you have any questions.`;
-}
-
 if ((date - pastDate) > msToDays) {
     backSoSoon.textContent = `Back so soon! Awesome!`;
 }
@@ -23,6 +14,16 @@ else {
     backSoSoon.textContent = "";
     let days = (date - pastDate) / msToDays;
     lastVisited.textContent = `You last visited ${days.toFixed(0)} days ago.`;
+}
+
+if (numVisits !== 0) {
+	visitsDisplay.textContent = numVisits;
+} 
+else {
+    numVisits = 1;
+    visitsDisplay.textContent = numVisits;
+	firstVisit.textContent = `Welcome! Let us know if you have any questions.`;
+    lastVisited.textContent = "";
 }
 
 numVisits++;
