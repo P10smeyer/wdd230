@@ -35,14 +35,16 @@ const displayLinks = (weeks) => {
         index = 0;
         anchors.forEach(anchor => {
             let anchorTag = document.createElement('a');
+            anchorTag.setAttribute('id', 'week' + weekNumber.toString() + '-activity' + anchorIndex);
+            weekList.appendChild(anchorTag);
+            const anchorElement = document.querySelector('#week' + weekNumber.toString() + '-activity' + anchorIndex);
             let anchorText = anchors[index].title;
             let anchorLink = anchors[index].url;
-            anchorTag.textContent = anchorText;
-            anchorTag.href = anchorLink;
-            weekList.appendChild(anchorTag);
+            anchorElement.textContent = anchorText;
+            anchorElement.href = anchorLink;
             let addVerticalBar = ' | ';
             if (anchorIndex != anchors.length) {
-                weekList.textContent += addVerticalBar;
+                weekList.innerHTML += addVerticalBar;
             }
             anchorIndex++;
             index++;
