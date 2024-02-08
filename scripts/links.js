@@ -1,5 +1,7 @@
 const baseURL = "https://P10smeyer.github.io/wdd230/";
 const linksURL = "https://P10smeyer.github.io/wdd230/data/links.json";
+const learningActivities = document.querySelector('.learning');
+let weekIndex = 0;
 
 async function getLinks() {
     try {
@@ -7,6 +9,7 @@ async function getLinks() {
         if (response.ok) {
             const data = await response.json();
             console.log(data);
+            displayLinks(data.weeks);
         }
         else {
             throw Error(await response.text());
@@ -18,3 +21,33 @@ async function getLinks() {
 }
 
 getLinks();
+
+const displayLinks = (weeks) => {
+    weeks.forEach(week => {
+        let list = document.createElement('li');
+        let weekNumber = weekIndex + 1;
+        list.textContent = "Week 0" + weekNumber.toString() + ": ";
+        list.setAttribute('class', 'weekList' + weekNumber.toString())
+        let anchors = weeks[weekIndex].links;
+        learningActivities.appendChild(list);
+        const weekList = document.querySelector('.weekList' + weekNumber.toString());
+        let anchorIndex = 1;
+        index = 0;
+        anchors.forEach(anchor => {
+            let anchorTag = document.createElement('a');
+            let anchorText = anchors[index].title;
+            let anchorLink = anchors[index].url;
+            anchorTag.textContent = anchorText;
+            anchorTag.href = anchorLink;
+            weekList.appendChild(anchorTag);
+            let addVerticalBar = ' | ';
+            if (anchorIndex != anchors.length) {
+                weekList.textContent += addVerticalBar;
+            }
+            anchorIndex++;
+            index++;
+        })
+        weekIndex++;
+    });
+}
+
