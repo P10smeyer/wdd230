@@ -1,6 +1,6 @@
 const gridbutton = document.querySelector("#grid");
 const listbutton = document.querySelector("#list");
-const display = document.querySelector(".card");
+const display = document.querySelector("article");
 const url = "https://P10smeyer.github.io/wdd230/chamber/data/members.json";
 
 gridbutton.addEventListener("click", () => {
@@ -24,7 +24,7 @@ async function fetchMembers() {
         if (response.ok) {
             const data = await response.json();
             console.log(data);
-            displayResults(data.members);
+            verticalGrid(data.members);
         }
         else {
             throw Error(await response.text());
@@ -35,10 +35,9 @@ async function fetchMembers() {
     }
 }
 
-function displayResults (data) {
+const verticalGrid = (members) => {
     i = 1;
     members.forEach(member => {
-        let eachCard = document.querySelector("#card" + i.toString());
         let card = document.createElement('section');
         let logo = document.createElement('img');
         let company = document.createElement('h3');
@@ -54,12 +53,14 @@ function displayResults (data) {
         website.textContent = member.website;
         website.href = member.website;
         membershipLevel.textContent = "Membership Level: " + member.membershipLevel;
-        cards.appendChild(card);
+        display.appendChild(card);
+        let eachCard = document.getElementById("card-" + i.toString());
         eachCard.appendChild(logo);
         eachCard.appendChild(company);
         eachCard.appendChild(address);
         eachCard.appendChild(phoneNumber);
         eachCard.appendChild(website);
         eachCard.appendChild(membershipLevel);
+        i++;
     });
 }
