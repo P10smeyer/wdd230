@@ -47,6 +47,7 @@ const verticalGrid = (members) => {
         let membershipLevel = document.createElement('p');
         card.setAttribute('id', "card-" + i.toString());
         logo.setAttribute('src', member.icon);
+        logo.setAttribute('alt', member.company + "Logo");
         company.textContent = member.company;
         address.textContent = member.address;
         phoneNumber.textContent = member.phoneNumber;
