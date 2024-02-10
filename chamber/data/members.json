@@ -1,0 +1,63 @@
+{
+    "members": [
+      {
+        "company": "Bank of Utah",
+        "address": "2605 Washington Blvd - Ogden, UT 84401",
+        "phoneNumber": "(801)-409-5000",
+        "website": "https://www.bankofutah.com/",
+        "icon": "images/bank-of-utah.webp",
+        "membershipLevel": "Gold"
+      },
+      {
+        "company": "Focus Services",
+        "address": "4102 South 1900 West - Roy, UT 84067",
+        "phoneNumber": "(801) 393-1635",
+        "website": "https://www.focusservices.com/",
+        "email": "info@focusservices.com",
+        "icon": "images/focus-services.webp",
+        "membershipLevel": "Bronze"
+      },
+      {
+        "company": "Cafe Rio",
+        "address": "5695 Harrison Blvd - South Ogden, UT 84403",
+        "phoneNumber": "(385) 205-8697",
+        "website": "https://www.caferio.com/locations/south-ogden",
+        "email": "info@gibbystudios.com",
+        "icon": "images/cafe-rio.webp",
+        "membershipLevel": "Silver"
+      },
+      {
+        "company": "Union Grill",
+        "address": "315 24th Street - Ogden, UT 84401",
+        "phoneNumber": "(801) 621-2830",
+        "website": "uniongrillogden.com",
+        "icon": "images/union-grill.webp",
+        "membershipLevel": "Silver"
+      },
+      {
+        "company": "Gibby Studios",
+        "address": "621 W 4225 S - Riverdale, UT 84405",
+        "phoneNumber": "(801)-394-1644",
+        "website": "https://www.gibbystudios.com/",
+        "ema5050il": "info@gibbystudios.com",
+        "icon": "images/gibby-studios.webp",
+        "membershipLevel": "Gold"
+      },
+      {
+        "company": "McKay-Dee Hospital",
+        "address": "4401 Harrison Blvd - Ogden, UT 84403",
+        "phoneNumber": "(801) 387-2800",
+        "website": "https://intermountainhealthcare.org/locations/mckay-dee-hospital/",
+        "icon": "images/mckay-dee-hospital.webp",
+        "membershipLevel": "Gold"
+      },
+      {
+        "company": "St Annes Center Inc",
+        "address": "137 W Binford St - Ogden UT 84401",
+        "phoneNumber": "(801)-621-5036",
+        "website": "https://greatnonprofits.org/org/st-annes-center-inc",
+        "icon": "images/st-annes.webp",
+        "membershipLevel": "Non Profit Membership"
+      }
+    ]
+}
