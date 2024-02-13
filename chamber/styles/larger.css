@@ -83,6 +83,7 @@
 
     .scenarios {
         box-sizing: border-box;
+        width: 100%;
     }
 
     .scenarios ul {
@@ -92,16 +93,28 @@
         padding: 50px;
         font-size: 1.5rem;
         color: rgb(228, 229, 233);
+        padding-top: 0;
+        padding-bottom: 20px;
     }
 
-    .scenarios a {
+    .scenarios li {
         border: 5px solid rgb(37, 49, 209);
         background-color: rgb(228, 229, 233);
         margin: 0.5em;
         padding: 20px;
         text-decoration: none;
         color: rgb(1, 6, 19);
+        text-align: center;
     }
+
+    /* .scenarios a {
+        border: 5px solid rgb(37, 49, 209);
+        background-color: rgb(228, 229, 233);
+        margin: 0.5em;
+        padding: 20px;
+        text-decoration: none;
+        color: rgb(1, 6, 19);
+    } */
 
     .spotlights {
         margin-top: -0.5rem;
@@ -254,5 +267,28 @@
         background-color: rgb(228, 229, 233);
         border: 1px solid rgb(1, 6, 19);
         height: auto;
+    }
+
+    .a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .b {
+        width: 80%;
+    }
+
+    #forecast p {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        align-items: center;
+        justify-items: center;
+    }
+
+    #forecast {
+        background-color: rgb(228, 229, 233);
+        border: none;
     }
 }
