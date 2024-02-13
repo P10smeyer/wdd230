@@ -55,15 +55,15 @@ function displayWeather (data) {
 
 const displayForecast = (data) => {
     let i = 0;
-    let j = 0;
+    // let j = 0;
     let n = 8;
-    data.forEach(list => {
-        if (j === 0 || j % 8 === 0)
+    data.forEach((list, index) => {
+        if (index === 1 || index === 9 || index === 17)
         {
             if (i < 3)
             {
                 let paragraph = document.createElement('p');
-                let pIdTag = 'day-' + (i + 1).toString();
+                let pIdTag = 'day-' + (index + 1).toString();
                 let daySpan = document.createElement('span');
                 let tempSpan = document.createElement('span');
                 let iconSpan = document.createElement('img');
@@ -73,10 +73,9 @@ const displayForecast = (data) => {
                 let day = list.dt_txt;
                 let desc = list.weather[0].description;
                 let temp = list.main.temp + ' &deg;F';
-                paragraph.setAttribute('id', 'day-' + (i + 1).toString());
+                paragraph.setAttribute('id', 'day-' + (index + 1).toString());
                 iconSpan.setAttribute('src', iconsrc);
                 iconSpan.setAttribute('alt', desc);
-                // paragraph.textContent = "Day: " + (i + 1).toString() + ", ";
                 daySpan.innerHTML = day;
                 tempSpan.innerHTML = temp;
                 iconSpan.innerHTML = iconSpan;
@@ -90,7 +89,5 @@ const displayForecast = (data) => {
                 i++;
             }
         }
-        j++;
-    });
+    }); 
 }
-
