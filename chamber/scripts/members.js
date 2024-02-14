@@ -1,7 +1,8 @@
 const gridbutton = document.querySelector("#grid");
 const listbutton = document.querySelector("#list");
 const display = document.querySelector("article");
-const url = "https://P10smeyer.github.io/wdd230/chamber/data/members.json";
+const membersUrl = "https://P10smeyer.github.io/wdd230/chamber/data/members.json";
+
 
 gridbutton.addEventListener("click", () => {
 	// example using arrow function
@@ -20,7 +21,7 @@ fetchMembers();
 
 async function fetchMembers() {
     try {
-        const response = await fetch(url);
+        const response = await fetch(membersUrl);
         if (response.ok) {
             const data = await response.json();
             console.log(data);
