@@ -67,6 +67,15 @@
         margin-bottom: -25px;
     }
 
+    /* .hero-image {
+        position: absolute;
+        height: 50vh;
+        width: 100%;
+        background-image: url("https://images.ctfassets.net/0wjmk6wgfops/2Ug1ZjCIucSfTtjV9ClSca/a8923ed152e2283ab6ae37c1aebd94a5/Washington_Ave_winter_morning_credit_Albert_Lew_8234092f-e5ec-4c76-897b-4c53715b8d8c.jpg?q=70");
+        opacity: .5;
+        background-size: cover;
+    } */
+
     #menu {
         display: none;
     }
@@ -80,8 +89,11 @@
         justify-content: center;
         width: 100%;
     }
-
     .scenarios {
+        margin-bottom: 10px;
+    }
+
+    .scenarios, .two-spotlights {
         box-sizing: border-box;
         width: 100%;
     }
@@ -274,10 +286,15 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        width: 90%;
     }
 
     .b {
-        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 90%;
     }
 
     #forecast p {
@@ -290,5 +307,25 @@
     #forecast {
         background-color: rgb(228, 229, 233);
         border: none;
+    }
+
+    .two-spotlights {
+        box-sizing: border-box;
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        column-gap: 20px;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: -65px;
+        margin-bottom: -40px;
+    }
+
+    #span-banner h2 {
+        margin: 0 auto;
+        display: block;
+        font-size: 1.5em;
+        width: 80%;
+        font-weight: bold;
     }
 }

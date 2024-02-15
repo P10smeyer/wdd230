@@ -45,7 +45,7 @@
             <li><a href="join.html">Join</a></li>
         </ul>
     </nav>
-    <main>
+    <main class="chamber-main">
         <div class="hero">
             <div class="hero-image"></div>
             <div class="hero-text">
@@ -61,37 +61,45 @@
         1. What events will be happening?
         2. Is this an organization I would want to purchase a membership for?
         3. How can I contact the Chamber of Commerce with questions? -->
-        <div class="scenarios">
-            <ul>
-                <li class="a">        
-                    <p>Today's temperature in Ogden City, Utah is <span id="current-temp"></span></p>
-                    <figure>
-                        <img id="weather-icon" src="images/temp.png" alt="Weather Icon">
-                        <figcaption id="figcaption"></figcaption>
-                    </figure>
-                </li>
-                <li class="b">
-                    <p>The three day future forecast - Ogden City, UT:</p>
-                    <section id="forecast">
-            
+        <div class="chamber-grid">
+            <div class="scenarios">
+                <ul>
+                    <li class="a">        
+                        <p>Today's temperature in Ogden City, Utah is <span id="current-temp"></span></p>
+                        <figure>
+                            <img id="weather-icon" src="images/temp.png" alt="Weather Icon">
+                            <figcaption id="figcaption"></figcaption>
+                        </figure>
+                    </li>
+                    <li class="b">
+                        <p>The three day future forecast - Ogden City, UT:</p>
+                        <section id="forecast">
+                
+                        </section>
+                    </li>
+                    <!-- <li><a href="">Company Reviews</a></li>
+                    <li><a href="">Contact Us</a></li> -->
+                </ul>
+            </div>
+            <div class="two-spotlights">
+                <div class="spotlights-one">
+                    <h2>Ogden Chamber Monthly Spotlight</h2>
+                    <a href="https://topworkplaces.com/award/saltlake/2023/">Top Utah Companies to Work For 2023</a>
+                    <p>1. Building Zone Industries</p>                   
+                    <p>2. Mountain America Credit Union</p>
+                    <p>3. CHG Healthcare</p>
+                </div>
+                <div class="spotlights-two">
+                    <h2>Gold and Silver Members Spotlight</h2>
+                    <section id="members">
+        
                     </section>
-                </li>
-                <!-- <li><a href="">Company Reviews</a></li>
-                <li><a href="">Contact Us</a></li> -->
-            </ul>
-        </div>
-        <div class="spotlights">
-            <h2>Ogden Chamber Monthly Spotlight</h2>
-            <a href="https://topworkplaces.com/award/saltlake/2023/">Top Utah Companies to Work For 2023</a>
-            <p>1. Building Zone Industries</p>                   
-            <p>2. Mountain America Credit Union</p>
-            <p>3. CHG Healthcare</p>
-        </div>
-        <div class="two-spotlights">
-            <h2>Gold and Silver Members Spotlight</h2>
-            <section id="members">
-
-            </section>
+                </div>
+            </div>
+            <div class="hide-banner">
+                <button class="banner-button">❌</button>
+                <span id="span-banner"><h2 id="toggle">The Chamber of Commerce meet and greet will be on Wednesday at 7:00 PM</h2></span>                
+            </div>
         </div>
     </main>
     <footer>
@@ -100,6 +108,7 @@
         <p>Created By: Preston Tensmeyer | WDD 230</p>
         <p id="lastModified"></p>
     </footer>
+    <script src="scripts/banner.js"></script>
     <script src="scripts/spotlights.js"></script>
     <script src="scripts/weather.js"></script>
     <script src="scripts/menu.js"></script>
