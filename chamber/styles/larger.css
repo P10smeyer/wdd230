@@ -67,15 +67,6 @@
         margin-bottom: -25px;
     }
 
-    /* .hero-image {
-        position: absolute;
-        height: 50vh;
-        width: 100%;
-        background-image: url("https://images.ctfassets.net/0wjmk6wgfops/2Ug1ZjCIucSfTtjV9ClSca/a8923ed152e2283ab6ae37c1aebd94a5/Washington_Ave_winter_morning_credit_Albert_Lew_8234092f-e5ec-4c76-897b-4c53715b8d8c.jpg?q=70");
-        opacity: .5;
-        background-size: cover;
-    } */
-
     #menu {
         display: none;
     }
@@ -110,7 +101,6 @@
     }
 
     .scenarios li {
-        /* border: 5px solid rgb(37, 49, 209); */
         background-color: rgb(228, 229, 233);
         margin: 0.5em;
         padding: 20px;
@@ -119,20 +109,9 @@
         text-align: center;
     }
 
-    /* .scenarios a {
-        border: 5px solid rgb(37, 49, 209);
-        background-color: rgb(228, 229, 233);
-        margin: 0.5em;
-        padding: 20px;
-        text-decoration: none;
-        color: rgb(1, 6, 19);
-    } */
-
     .spotlights {
         margin-top: -0.5rem;
     }
-
-
 
     .scenarios li {
         list-style: none;
@@ -169,8 +148,6 @@
     .main-join {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        /* padding: 0 20% 0 20%; */
-        /* min-height: 18rem; */
     }
 
     form label.top, form div {
@@ -180,62 +157,6 @@
         color: var(--blackFont);
         font-size: .8rem;
     }
-
-    /* form fieldset {
-        margin: 1rem 1rem;
-        border: 3px solid var(--border);
-        border-radius: 10px;
-        padding: 0 20% 0 25%;
-    }
-    
-    form legend {
-        color: var(--legendText);
-        margin: 0 1rem;
-        padding: 0 .5rem;
-        font-weight: bold;
-        font-size: larger;
-        width: fit-content;
-    }
-    
-    form label.top, form div {
-        display: block;
-        padding-top: 1rem;
-        padding: 0 10% 10% 0;
-        color: var(blackFont);
-        font-size: .8rem;
-    }
-    
-    form label.top input{
-        -webkit-appearance: none;
-        display: block;
-        font-size: 1rem;
-        border: solid 1px #999;
-        border-radius: 4px;
-        padding: .75rem;
-        color: #555;
-        width: 100%;
-        max-width: 20rem;
-        background-color: rgba(0,0,0,0.1);
-    }
-    
-    form label.top input:required {
-        border-left: var(--requiredRed) solid 6px;
-    }
-    
-    form label.top input:required:valid {
-        border-left: var(--requiredValid) solid 6px;
-    }
-
-    .submit {
-        border: none;
-        background-color: var(--border);
-        color: white;
-        border-radius: 1rem;
-        padding: .75rem 1.5rem;
-        margin: 0 0 2rem 2%;
-        width: 96%;
-        max-width: 20rem;
-    } */
 
     .benefits {
         display: block;

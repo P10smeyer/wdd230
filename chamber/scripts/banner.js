@@ -27,4 +27,3 @@ myBtn.addEventListener('click', () => {
 function visitPage() {
     window.location='join.html';
 }
-
